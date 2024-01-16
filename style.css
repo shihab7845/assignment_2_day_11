@@ -1,4 +1,5 @@
 
+
 /* navigation related styles */
 
 nav {
@@ -31,58 +32,175 @@ nav li {
     height: 70vh;
     background-image: url(./B9A2-Hero-Travel/Images/Group\ 13\ \(1\)\ \(1\).png);
     background-size: cover;
-    position: absolute;
-    left: 70px;
-    padding:30px 20px;
+    position: relative;
+    margin: 0 auto;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 .banner_1 h3 {
     color: #FFF;
     font-family: Mulish;
-    font-size:44px;
+    font-size: 44px;
     font-style: normal;
     font-weight: 600;
-    text-align: center;
 }
 
 .banner_1 p {
     color: #FFF;
-    text-align: center;
     font-family: Mulish;
-    font-size: 10px;
+    font-size: 16px;
     padding: 20px;
     font-weight: 200;
-
 }
 
 .sub-b1 {
-
-    display: inline-flex;
-    padding: 1rem;
-    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
     gap: 0.86rem;
-    position: absolute;
-    left: 40px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .i1-1 {
-    width:6.25rem;
-    height:2.65rem;
+    width: 100%;
+    max-width: 200px;
+    height: 2.65rem;
     border-radius: 8px;
     background: #FFF;
+    margin-bottom: 10px;
 }
-#i1-4{
-    width: 6.25rem;
-height:2.65rem;
 
-border-radius: 0.5rem;
+#i1-4 {
+    width: 100%;
+    max-width: 200px;
+    height: 2.65rem;
+    border-radius: 0.5rem;
+    background: #FF5400;
+    color: #FFF;
+}
+
+
+
+/* banner 2 related style  */
+.banner_2 {
+    display: flex;
+   
+    align-items: center;
+}
+
+.banner_left_2 img {
+    width: 25rem;
+    height: auto;
+}
+
+.banner_right_2 h3 {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 2.3rempx;
+    font-weight: 800;
+}
+
+.para2 {
+    color: rgba(19, 19, 24, 0.70);
+font-family: Mulish;
+font-size: 16px;
+
+font-weight: 400;
+
+
+}
+.btn-b2{
+    width: 90px;
+height: 40px;
+border-radius: 8px;
 background: #FF5400;
+
+} 
+/* banner 3 related style  */
+
+.destination_1 {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
 }
 
-/* responsive for mobile devices */
+.destination_1 img {
+    width: 49%;
+    height: auto;
+}
+
+.destination_2 {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.destination_2 img {
+    width: 33%;
+    height: auto;
+}
+
+.destination_3 {
+    display: flex;
+    gap: 10px;
+}
+
+.destination_3 img {
+    width: 49%;
+    height: auto;
+}
+
+.destination h3 {
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.destination p {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* responsive for mobile device  */
+
+
+
 @media only screen and (max-width: 428px) {
+    .banner_2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner_left_2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .banner_right_2 h3 {
+        font-size: 1.8rem;
+    }
+
+    .para2 {
+        font-size: 14px;
+    }
+
+    .btn-b2 {
+        width: 80px;
+        height: 35px;
+    }
+
     nav {
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
     }
 
     .banner_1 {
