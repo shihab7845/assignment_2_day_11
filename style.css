@@ -350,7 +350,7 @@ font-weight: 800;
 
 
 
-@media only screen and (max-width: 428px) {
+@media only screen and (max-width: 600px) {
     .banner_2 {
         flex-direction: column;
         text-align: center;
