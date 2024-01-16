@@ -221,6 +221,129 @@ background: #FF5400;
     margin-top: 10px;
 }
 
+/* banner 5 related style  */
+.banner-5 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.bn5-description h3 {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+#bn5-p {
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.bn5-description p {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 700;
+}
+.banner-5 button{
+width: 174px;
+height: 52px;
+border-radius: 8px;
+background: #FF5400;
+color: #FFF;
+text-align: center;
+font-family: Mulish;
+font-size: 20px;
+font-weight: 800;
+}
+
+/* banner 6 related style */
+
+.banner-6 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.newsletter {
+    border: 2px solid black;
+    width: 45%;
+    height: 55vh;
+    background-color: antiquewhite;
+}
+
+.input_item {
+    display: flex;
+    flex-direction: column;
+}
+
+#input-11 {
+    /* margin-top: 60px; */
+    width: 393px;
+    height: 52px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    font-size: 16px;
+    text-align: center;
+}
+
+.newsletter h3 {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.newsletter p {
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#input-2 {
+    width: 393px;
+    height: 52px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    font-size: 16px;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+#input-button {
+    width: 393px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FF5400;
+   
+}
+
+/* banner 7 related style */
+
+.foother{
+    width: 98vw;
+    height:70vh;
+    background: rgba(19, 19, 24, 0.05);
+ 
+}
+.footer-title{
+    display: flex;
+}
+.social-media{
+    display: flex;
+    
+}
+.footer-1{
+    position: absolute;
+    left: 45%;
+    padding-top: 5%;
+}
 
 
 /* responsive for mobile device  */
@@ -270,5 +393,64 @@ background: #FF5400;
     .destination_2 img,
     .destination_3 img {
         width: 100%;
+    }
+
+    .banner-card {
+        flex-direction: column;
+    }
+
+    .card-1,
+    .card-2,
+    .price_card_1 {
+        width: 100%;
+    }
+
+    .banner-5 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-5 .bn5-description {
+        order: 2;
+    }
+
+    .banner-5 .bn5-img {
+        order: 1;
+    }
+
+    .banner-5 img {
+        width: 100%; 
+        height: auto;
+    }
+
+    .banner-5 button {
+        width: 100%;
+        margin-top: 10px; 
+    }
+
+    .banner-6 {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .newsletter {
+        width: 100%; 
+        height: auto; 
+    }
+
+    #input-11,
+    #input-2,
+    #input-button {
+        margin: 10px 0; 
+    }
+
+    .foother {
+        height: auto;
+    }
+
+    .footer-1 {
+        position: static;
+        text-align: center;
+        padding: 5%;
     }
 }
