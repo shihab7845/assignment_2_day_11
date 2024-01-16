@@ -169,6 +169,59 @@ background: #FF5400;
     font-size: 16px;
     font-weight: 400;
 }
+/* banner 4 related style  */
+
+.banner-4 h3 {
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.banner-4 p {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.banner-card {
+    display: flex;
+    gap: 5px;
+}
+
+.card-1 {
+    border: 2px solid black;
+
+}
+
+.card-2 {
+    border: 2px solid black;
+}
+.card-1:hover,
+.card-2:hover
+{
+    border-color: #FF5400; 
+    background-color: #5d656b;
+}
+.price_card_1{
+    border: 2px solid black;
+    width: 40vw;
+}
+.price_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price_card_1:hover{
+    background-color: #4ebfbd;
+    border-color: #FF5400; 
+    margin-top: 10px;
+}
+
+
 
 /* responsive for mobile device  */
 
@@ -205,5 +258,17 @@ background: #FF5400;
 
     .banner_1 {
         padding: 20px;
+    }
+
+    .destination_1,
+    .destination_2,
+    .destination_3 {
+        flex-direction: column;
+    }
+
+    .destination_1 img,
+    .destination_2 img,
+    .destination_3 img {
+        width: 100%;
     }
 }
